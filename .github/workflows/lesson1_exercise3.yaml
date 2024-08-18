@@ -1,6 +1,6 @@
 name: "Lesson 1 - Exercise 3"
 
-run-name: "Run of the complex workflow: Triggered by: [${{ github,actor }}], event: [${{github.event_name}}], run: [Id:${{github.run_id}}, iteration:${{github.run_number}}]"
+run-name: "Run of the complex workflow: Triggered by: [${{github.actor}}], event: [${{github.event_name}}], run: [Id:${{github.run_id}}, iteration:${{github.run_number}}]"
 
 on:
   # Workflow run trigger events
