@@ -1,6 +1,6 @@
 name: "Lesson 1 - Exercise 3"
 
-run-name: "Run of the complex workflow: [${{ github }}], runner: [${{ runner }}]"
+run-name: "Run of the complex workflow: [${{ github }}], runner [${{ runner }}]"
 
 on:
   # Workflow run trigger events
