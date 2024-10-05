@@ -5,7 +5,7 @@ on:
     branches:
       - main
       # Match the release branches: releases/1, releases/2, etc.
-      - "releases/[0-9]"
+      - "release/[0-9]"
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
