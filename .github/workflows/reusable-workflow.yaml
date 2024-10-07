@@ -6,8 +6,8 @@ on:
     inputs:
         actor:
             description: "The actor of the workflow!"
+            # If you want to use a default value for any input, use required: false
             required: true
-            # TODO: The default value is not working. Investigate
             default: "Me, me, me, me!"
             type: string
 
