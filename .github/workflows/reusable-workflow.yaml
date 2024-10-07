@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: A message
         run: |
-          echo "The reusable workflow was called by: >>> $ACTOR <<< using job: >>> ${{ inputs.repo }} <<<"
+          echo "The reusable workflow was called by: >>> $ACTOR <<< from repo: >>> ${{ inputs.repo }} <<<"
         env:
           ACTOR: ${{ inputs.actor }}
           #REPO: ${{ inputs.repo }}
