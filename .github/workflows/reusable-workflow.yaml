@@ -10,8 +10,8 @@ on:
         required: false
         default: "Me, me, me, me!"
         type: string
-      job:
-        description: "The job calling this workflow"
+      repo:
+        description: "The repo from where this workflow was called"
         required: true
         type: string
 
@@ -22,7 +22,7 @@ jobs:
     steps:
       - name: A message
         run: |
-          echo "The reusable workflow was called by: >>> $ACTOR <<< using job: >>> $JOB <<<"
+          echo "The reusable workflow was called by: >>> $ACTOR <<< using job: >>> ${{ inputs.repo }} <<<"
         env:
           ACTOR: ${{ inputs.actor }}
-          JOB: ${{ inputs.job }}
+          #REPO: ${{ inputs.repo }}
