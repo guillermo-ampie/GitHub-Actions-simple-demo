@@ -1,4 +1,4 @@
-# .github/workflows/caller-workflow.yml - ChatGPT generated
+# .github/workflows/caller-workflow.yml - ChatGPT generated, updated
 name: Caller Workflow
 
 on:
@@ -7,5 +7,6 @@ on:
 jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/called-workflow.yaml
+# When you want to use an input's default value, and there is only one input, comment the "with:" directive    
 #    with: 
       # No input provided for 'name', so the default 'User' will be used
