@@ -1,4 +1,4 @@
-# .github/workflows/caller-workflow.yml
+# .github/workflows/caller-workflow.yml - ChatGPT generated
 name: Caller Workflow
 
 on:
@@ -8,4 +8,5 @@ jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/called-workflow.yaml
     with: 
+      ### This setup is not working for default values...
       # No input provided for 'name', so the default 'User' will be used
