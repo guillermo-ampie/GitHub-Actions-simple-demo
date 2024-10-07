@@ -12,9 +12,6 @@ jobs:
 #      actor: ${{ github.actor }} 
     with:
       job: ${{ github.job }}
-    steps:
-      run: |
-        echo "The job: >> ${{ github.job }} <<<"
     
     ### The reusable workflow is not using anything that requires the repo secret
     #secrets:
