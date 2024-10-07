@@ -9,5 +9,6 @@ jobs:
     with:
       actor: ${{ github.actor }}
 
+    ### The reusable workflow is not using anything that requires the repo secret
     #secrets:
     #  my_secret: ${{ secrets.MY_SECRET }}
