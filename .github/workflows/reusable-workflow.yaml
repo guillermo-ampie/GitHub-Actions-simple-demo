@@ -6,7 +6,7 @@ on:
     inputs:
         actor:
             description: "The actor of the workflow!"
-            #required: true
+            required: true
             type: string
             default: "Me, me, me, me!"
 
