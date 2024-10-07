@@ -11,7 +11,7 @@ jobs:
 #    with:
 #      actor: ${{ github.actor }} 
     with:
-      job: ${{ github.job }}
+      repo: ${{ github.repository }}
     
     ### The reusable workflow is not using anything that requires the repo secret
     #secrets:
