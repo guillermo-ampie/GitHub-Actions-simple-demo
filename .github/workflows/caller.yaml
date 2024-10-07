@@ -1,4 +1,4 @@
-name: Lesson 3, Exercise 1: The Caller Workflow
+name: "Lesson 3, Exercise 1: The Caller Workflow"
 
 on:
   workflow_dispatch:
