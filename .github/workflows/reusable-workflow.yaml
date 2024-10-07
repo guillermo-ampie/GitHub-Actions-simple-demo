@@ -4,19 +4,24 @@ on:
   workflow_dispatch:
   workflow_call:
     inputs:
-        actor:
-            description: "The actor of the workflow!"
-            # If you want to use a default value for any input, use required: false
-            required: false
-            default: "Me, me, me, me!"
-            type: string
+      actor:
+        description: "The actor of the workflow!"
+        # If you want to use a default value for any input, use required: false
+        required: false
+        default: "Me, me, me, me!"
+        type: string
+      job:
+        description: "The job calling this workflow"
+        required: true
+        type: string
 
+          
 jobs:
   message:
     runs-on: ubuntu-latest
     steps:
       - name: A message
         run: |
-          echo "The reusable workflow was called by: >>> $ACTOR <<<"
+          echo "The reusable workflow was called by: >>> $ACTOR <<< using job: ${{ inputs.job }}"
         env:
           ACTOR: ${{ inputs.actor }}
