@@ -1,4 +1,4 @@
-name: "Lesson 3 - Exercise 1 - Reusable Workflow"
+honame: "Lesson 3 - Exercise 1 - Reusable Workflow"
 
 on:
   workflow_call:
@@ -12,7 +12,7 @@ jobs:
   greeting:
     runs-on: ubuntu-latest
     steps:
-      - name: Greetings message
+      - name: A message
         run: |
           echo "The reusable workflow was called by: >>> $ACTOR <<<"
         env:
