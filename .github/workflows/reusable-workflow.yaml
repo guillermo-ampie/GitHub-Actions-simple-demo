@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
         actor:
-            description: "The person who will receive the greeting"
+            description: "The actor of the workflow!"
             required: true
             default: "Me, me, me, me!"
 
