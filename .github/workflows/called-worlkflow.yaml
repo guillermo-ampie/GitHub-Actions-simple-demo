@@ -1,0 +1,18 @@
+# .github/workflows/called-workflow.yml
+name: Reusable Workflow
+
+on:
+  workflow_call:
+    inputs:
+      name:
+        description: "Your Name"
+        required: true
+        default: "User"
+        type: string
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet User
+        run: echo "Hello, ${{ inputs.name }}!"
