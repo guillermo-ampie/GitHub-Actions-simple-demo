@@ -6,6 +6,6 @@ on:
 
 jobs:
   call-reusable-workflow:
-    uses: ./.github/workflows/called-workflow.yml
+    uses: ./.github/workflows/called-workflow.yaml
     with: 
       # No input provided for 'name', so the default 'User' will be used
