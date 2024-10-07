@@ -11,7 +11,7 @@ on:
             default: "Me, me, me, me!"
 
 jobs:
-  greeting:
+  message:
     runs-on: ubuntu-latest
     steps:
       - name: A message
