@@ -6,10 +6,13 @@ on:
 jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/reusable-workflow.yaml
-# Comment the two below lines to use the default value for "actor"
+# Comment the two below lines to use the default value for "actor" if "actor" is the only input,
+# But if you have any required input, you must specify it
 #    with:
 #      actor: ${{ github.actor }} 
-
+    with:
+      job: $ {{ github.job }}
+    
     ### The reusable workflow is not using anything that requires the repo secret
     #secrets:
     #  my_secret: ${{ secrets.MY_SECRET }}
