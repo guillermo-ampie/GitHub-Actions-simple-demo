@@ -1,4 +1,4 @@
-# .github/workflows/called-workflow.yml
+# .github/workflows/called-workflow.yml - ChatGPT generated
 name: Reusable Workflow
 
 on:
