@@ -6,8 +6,8 @@ on:
 jobs:
   call-reusable-workflow:
     uses: ./.github/workflows/reusable-workflow.yaml
-#    with:
-#      actor: ${{ github.actor }}
+    with:
+      actor:
 
     ### The reusable workflow is not using anything that requires the repo secret
     #secrets:
