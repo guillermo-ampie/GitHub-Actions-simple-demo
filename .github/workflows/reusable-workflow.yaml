@@ -7,8 +7,8 @@ on:
         actor:
             description: "The actor of the workflow!"
             required: true
-            type: string
             default: "Me, me, me, me!"
+            type: string
 
 jobs:
   message:
