@@ -6,7 +6,7 @@ on:
     inputs:
       name:
         description: "Your Name"
-        required: true
+        required: false
         default: "User"
         type: string
 
