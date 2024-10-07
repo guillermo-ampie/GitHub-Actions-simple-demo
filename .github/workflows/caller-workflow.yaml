@@ -11,5 +11,7 @@ jobs:
 # When you want to use an input's default value, and there is only one input, comment the "with:" directive    
 #    with: 
       # No input provided for 'name', so the default 'User' will be used
+
+## When you want to specify a value      
 #    with:
 #      name: ${{ github.actor }}
