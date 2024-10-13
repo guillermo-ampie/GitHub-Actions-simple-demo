@@ -39,7 +39,7 @@ jobs:
           print(primes)
 
           # Store the primes set in primes.txt
-          with open('./artifacts/primes.txt', 'w') as f:
+          with open('primes.txt', 'w') as f:
             for prime in primes:
               f.write(str(prime) + '\n')
         shell: python
@@ -54,7 +54,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: primes
-          path: ./artifacts/primes.txt
+          path: artifacts/primes.txt
 
   verify-primes:
     runs-on: ubuntu-latest
@@ -73,7 +73,7 @@ jobs:
       - name: Verify the generated primes
         run: |
           # Read the primes.txt file
-          with open('./artifacts/primes.txt', 'r') as f:
+          with open('primes.txt', 'r') as f:
             primes = set([int(line.strip()) for line in f.readlines()])
 
           # The expected primes
